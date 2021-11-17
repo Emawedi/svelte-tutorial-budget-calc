@@ -90,15 +90,15 @@
 
 <Navbar {showForm} />
 <main class="content">
-	<GithubAwait></GithubAwait>
-	<!-- {#if isFormOpen}
+	<!-- <GithubAwait></GithubAwait> -->
+	{#if isFormOpen}
 	<Modal>
 		<ExpenseForm {addExpense} name={setName} amount={setAmount} {isEditing} {editExpense} {hideForm}/>
 	</Modal>
 	{/if}
 	<Totals title="total expenses" {total}/>
 	<ExpensesList expenses={expenses} />
-	<button type="button" class="btn btn-primary btn-block" on:click={clearExpenses}>Clear Expenses</button> -->
+	<button type="button" class="btn btn-primary btn-block" on:click={clearExpenses}>Clear Expenses</button>
 </main>
 <!-- <Modal>
 	<h1 slot='header'>Hello modal</h1>
